@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9016f8c0-cd90-49a8-940e-5deaea868b56}</ProjectGuid>
+    <RootNamespace>ArduinoGUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\opencv\build\VS2019\install\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\opencv\build\VS2019\install\x64\vc16\staticlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;msvfw32.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>xcopy "$(ProjectDir)\opencv\sources\data" "$(OutDir)\data" /D /E /I /F /Y
+xcopy "$(ProjectDir)\recognition_data" "$(OutDir)\data" /D /E /I /F /Y
+
+xcopy "$(ProjectDir)\opencv\sources\data" "$(ProjectDir)\data" /D /E /I /F /Y
+xcopy "$(ProjectDir)\recognition_data" "$(ProjectDir)\data" /D /E /I /F /Y
+</Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)\opencv\build\VS2019\install\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ippicvmt.lib;msvfw32.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\opencv\build\VS2019\install\x64\vc16\staticlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>xcopy "$(ProjectDir)\opencv\sources\data" "$(OutDir)\data" /D /E /I /F /Y
+xcopy "$(ProjectDir)\recognition_data" "$(OutDir)\data" /D /E /I /F /Y
+
+xcopy "$(ProjectDir)\opencv\sources\data" "$(ProjectDir)\data" /D /E /I /F /Y
+xcopy "$(ProjectDir)\recognition_data" "$(ProjectDir)\data" /D /E /I /F /Y
+</Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Arduino_GUI.cpp" />
+    <ClCompile Include="TrainedDetector.cpp" />
+    <ClCompile Include="SerialPort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cvui.h" />
+    <ClInclude Include="TrainedDetector.hpp" />
+    <ClInclude Include="SerialPort.hpp" />
+    <ClInclude Include="UntrainedDetector.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{dee9f7be-5073-36d8-9650-0e9b9a316a45}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\ittnotify\ittnotify.vcxproj">
+      <Project>{8ad49d75-78f0-300d-a7ce-d1df2d6bbb14}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\libjpeg-turbo\libjpeg-turbo.vcxproj">
+      <Project>{731f3a1d-ad57-3f2a-99df-dc6767f02cba}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\libpng\libpng.vcxproj">
+      <Project>{35f87b8a-deec-307d-ba81-7b3822d22535}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\libtiff\libtiff.vcxproj">
+      <Project>{e36a3ec8-087d-3637-bfe1-1585f5c27a0a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\libwebp\libwebp.vcxproj">
+      <Project>{fb946a4d-e0b5-3e76-8854-5054dd53f3ef}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\openexr\IlmImf.vcxproj">
+      <Project>{9ece6e92-01ed-3187-9e4a-0ab32dc5197a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\protobuf\libprotobuf.vcxproj">
+      <Project>{7a7d44c5-dd2f-3798-808e-4c45c0b12718}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\3rdparty\zlib\zlib.vcxproj">
+      <Project>{8035cc87-6097-3656-b70e-d8a640cc90bb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>{064214fb-db1b-3735-9039-84acd2f29dcc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\core\opencv_core.vcxproj">
+      <Project>{7fd304f2-398b-348b-bda8-225157208f78}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\core\opencv_core_AVX.vcxproj">
+      <Project>{b7a85467-8520-3751-a5ed-ec99ce8adcaa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\core\opencv_core_AVX2.vcxproj">
+      <Project>{43574f3b-25ff-3919-8923-f5bde2283793}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\core\opencv_core_SSE4_1.vcxproj">
+      <Project>{4cfc9887-2c97-34eb-830a-4fae6d2edad1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\core\opencv_core_SSE4_2.vcxproj">
+      <Project>{bfa9839a-1744-3854-b412-0636db82f06f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\dnn\opencv_dnn.vcxproj">
+      <Project>{8628131d-c8dd-3cd0-a5d8-6d0e353f68b7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\dnn\opencv_dnn_AVX.vcxproj">
+      <Project>{2a36712a-9191-30e7-bd5c-f37597c9492c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\dnn\opencv_dnn_AVX2.vcxproj">
+      <Project>{787d5567-61f7-3739-aceb-c42ba5c9686d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\face\opencv_face.vcxproj">
+      <Project>{8cc95733-cad3-3036-a5a6-8d4df508e303}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{1bfad6d4-7f3d-3ba2-8d8b-ddf96aae41f3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\features2d\opencv_features2d_AVX2.vcxproj">
+      <Project>{6a00b1b1-2d4f-3156-85fa-34f218efcedf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\flann\opencv_flann.vcxproj">
+      <Project>{3fa1d26c-9ddb-3434-a031-7925225390bd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\highgui\opencv_highgui.vcxproj">
+      <Project>{609c2f8e-ec26-3c6f-96b1-c8a071cd6ee1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{8970f457-472d-383f-aae6-3c332d35ed78}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{3a2a275d-01df-3b12-a5cc-d895d4e6420a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\imgproc\opencv_imgproc_AVX.vcxproj">
+      <Project>{b7960a72-b69b-3150-9c91-2f86ed3527b3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\imgproc\opencv_imgproc_AVX2.vcxproj">
+      <Project>{cdd63c65-9975-3919-bc96-fbceed8711d1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\imgproc\opencv_imgproc_SSE4_1.vcxproj">
+      <Project>{d36b69b4-17b5-37eb-951e-0fce6f0cd009}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\ml\opencv_ml.vcxproj">
+      <Project>{76585d47-50d1-3b24-b581-c7a6c083ce50}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\objdetect\opencv_objdetect.vcxproj">
+      <Project>{ed172818-ff76-3dac-ac67-a38b5bc85a55}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\photo\opencv_photo.vcxproj">
+      <Project>{5cafb4a1-dbc1-3abf-87e3-70765e2888bb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\shape\opencv_shape.vcxproj">
+      <Project>{6863f5d7-a4c7-3f60-a359-727e63c1c28f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\stitching\opencv_stitching.vcxproj">
+      <Project>{851f61b3-0ef3-3cca-825d-038cf93e7f89}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\superres\opencv_superres.vcxproj">
+      <Project>{e8714eb1-5a09-3c13-8622-416cc1e2553a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\videoio\opencv_videoio.vcxproj">
+      <Project>{bd5c15cd-9928-3fe9-a5cc-6c9613442981}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\videostab\opencv_videostab.vcxproj">
+      <Project>{c3bed695-be20-3f96-84c6-96c7fb4b3887}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\modules\video\opencv_video.vcxproj">
+      <Project>{239b271c-3ca8-3296-9310-6797736f900c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="opencv\build\VS2019\opencv_modules.vcxproj">
+      <Project>{4d7ead7f-354b-30c2-8ac9-6d57b4cba9ab}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
